@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root{
-    --yellow:#644e9c;
+    --yellow:#f6f6f7;
+    --text-color:#f6f6f7;
+    --light-color:#7098c8;
+    --border:.2rem solid var(--yellow);
+    --main-color:#7e77ee;
 }
 *{
     font-family: 'Nunito', sans-serif;
@@ -13,6 +17,7 @@
     border: none;
     text-transform: capitalize;
     transition: all 1s ease-in-out;
+    color: var(--yellow);
 }
 html{
     font-size: 62.5%;
@@ -35,7 +40,7 @@ body{
 }
 section{
     min-height: 100vh;
-    padding: 1rem;
+    padding: 10rem 9% 2rem;
 }
 .btn{
     padding: 0.7rem 3rem;
@@ -45,6 +50,7 @@ section{
     margin-top: 1rem;
     font-size: 2rem;
     border-radius: 5rem;
+    
 }
 .btn i{
     padding: 0 .5rem;
@@ -52,6 +58,7 @@ section{
 }
 .btn:hover{
     background: var(--yellow);
+    color: #444;
 }
 .heading{
     text-align: center;
@@ -60,6 +67,12 @@ section{
     padding: 1rem;
     border-bottom: .1rem solid #fff4;
     color: #fff;
+}
+.red-dot{
+    color: red;
+}
+.green-dot{
+    color: green;
 }
 .heading span{
     color: var(--yellow);

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Portfolio, portfolioData } from 'src/data';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
-
+data:Portfolio[] = portfolioData
 }

@@ -1,0 +1,44 @@
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+.portfolio .box-container .box{
+    border: var(--yellow);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.portfolio .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.portfolio .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .box-container .box:hover .image img{
+ transform: scale(1.2);
+}
+.portfolio .box-container .box .content{
+    padding-top: 1rem;
+    color: #fff;
+}
+.portfolio .box-container .box .content .icon{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+.portfolio .box-container .box .content p{
+    font-size: 100%;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 2rem;
+}

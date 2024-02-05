@@ -1,18 +1,17 @@
-<div class="header" [style.left]="position" [style.width]="getSreenWidth<991?'100%':'35rem' ">
-    <h1 style="color: aliceblue;">{{getSreenWidth}}</h1>
+<div class="header" [style.transform]="menuButton?'scale(0)':'scale(1)'" >
     <div class="user">
-        <img src="assets/selective-focus-shot-handsome-man.jpg" alt="">
+        <img src="/assets/vipin760.jpg" alt="">
         <h3>VIPIN M</h3>
         <p>FULL STACK DEVELOPER</p>
     </div>
     <div class="navbar">
         <ul>
-            <li><a href="#home" (click)="toggle()">home</a></li>
-            <li><a href="#about" (click)="toggle()">about</a></li>
-            <li><a href="#education" (click)="toggle()">education</a></li>
-            <li><a href="#portfolio" (click)="toggle()">portfolio</a></li>
-            <li><a href="#contact" (click)="toggle()">contact</a></li>
+            <li><a [routerLink]="['/home']" (click)="toggle()">home</a></li>
+            <li><a [routerLink]="['/about']" (click)="toggle()">about</a></li>
+            <li><a [routerLink]="['/education']" (click)="toggle()">education</a></li>
+            <li><a [routerLink]="['/portfolio']" (click)="toggle()">portfolio</a></li>
+            <li><a [routerLink]="['/contact']" (click)="toggle()">contact</a></li>
         </ul>
     </div>
 </div>
-<div id="menu" [class]="buttonType" (click)="toggle()"></div>
+<div id="menu" [class]="menuButton?'fas fa-bars':'fas fa-times' " (click)="toggle()"></div>

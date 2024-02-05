@@ -4,6 +4,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { EducationComponent } from './components/pages/education/education.component';
+import { ErrorPageComponent } from './components/pages/error-page/error-page.component';
 
 export const routes: Routes = [
     {path:'home',component:HomeComponent},
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path:'contact',component:ContactComponent},
     {path:'portfolio',component:PortfolioComponent},
     {path:'education',component:EducationComponent},
-    {path:'',redirectTo:'/home', pathMatch:'full'}
+    {path:'',redirectTo:'/home', pathMatch:'full'},
+    {path:'error',component:ErrorPageComponent}
 ];

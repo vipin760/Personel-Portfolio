@@ -1,1 +1,21 @@
-<p>portfolio works!</p>
+<section class="portfolio">
+    <div class="heading" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="6000">my <span>portfolio</span></div>
+    <div class="box-container">
+        <div class="box" *ngFor="let item of data">
+            <div class="image">
+                <img src="{{item.image}}" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <span>Responsive</span>
+                    <span><i [class]="item.responsive?'fas fa-circle green-dot':'fas fa-circle red-dot' "></i>{{item.responsive}}</span>
+                </div>
+                <h3>{{item.label}}</h3>
+                <p>{{item.text}}</p>
+                <a href="{{item.link}}" class="btn">click here</a>
+            </div>
+        </div>
+    </div>
+</section>

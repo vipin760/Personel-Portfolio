@@ -1,0 +1,58 @@
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info{
+    flex: 1 1 25rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.about .row .info h3 span{
+    color: #fff;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem 0;
+}
+.about .row .info span{
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.about .row .info a:hover i{
+ color: #444;
+}
+.about .row .counter{
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: var(--light-color);
+}
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+@media(max-width:400px){
+    .about .row .counter .box{
+        width:100%;
+    }
+}

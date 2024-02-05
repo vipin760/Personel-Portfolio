@@ -1,0 +1,57 @@
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info .email{
+ text-transform: lowercase;
+}
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+.contact .row .content .share {
+    padding-top: 1rem;
+}
+.contact .row .content .whatsapp{
+    margin-top: 1rem;
+}
+.contact .row .content .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5;
+    color: var(--yellow);
+    font-size: 2rem;
+    border: .2rem solid var(--yellow);
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+}
+.contact .row .content .share a i{
+    padding: 1rem;
+}
+.contact .row .content .share a i:hover{
+    color: #fff;
+}

@@ -1,22 +1,21 @@
 import { Component, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule,RouterOutlet],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, OnChanges {
-  getSreenWidth!:number;
-  togglestatus:boolean=false;
-  buttonType:string='fas fa-bars';
-  position!:string;
+  menuButton:boolean=true;
+  defaultPosition!:boolean
+  getScreenWidth!:number;
   
   ngOnInit(): void {
-    // this.position = this.togglestatus?'-120%':'0%';
-    this.onWindowResize()
+ this.onWindowResize()
   }
   ngOnChanges(changes: SimpleChanges): void {
   
@@ -25,18 +24,18 @@ export class HeaderComponent implements OnInit, OnChanges {
 
   @HostListener('window:resize',['$event'])
   onWindowResize(){
-    this.getSreenWidth = window.innerWidth
+    this.getScreenWidth = window.innerWidth
     if(window.innerWidth<991){
-      this.position = "-120%"
+      this.menuButton = true
     }else{
-      this.position="0%"
+      this.menuButton = false
     }
   }
 
   toggle(){
-    this.position = this.togglestatus?"-120%":"0%";
-    this.buttonType = this.togglestatus?'fas fa-bars':'fas fa-times';
-    this.togglestatus = !this.togglestatus
+    if(this.getScreenWidth<991){
+      this.menuButton = !this.menuButton
+    }
   }
 
 }
