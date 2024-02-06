@@ -1,16 +1,21 @@
 <div class="header" [style.transform]="menuButton?'scale(0)':'scale(1)'" >
     <div class="user">
-        <img src="/assets/vipin760.jpg" alt="">
-        <h3>VIPIN M</h3>
-        <p>FULL STACK DEVELOPER</p>
+        <img data-aos="zoom-in-down" src="/assets/vipin760.jpg" alt="">
+        <h3 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">VIPIN M</h3>
+        <p data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">FULL STACK DEVELOPER</p>
     </div>
     <div class="navbar">
         <ul>
-            <li><a [routerLink]="['/home']" (click)="toggle()">home</a></li>
-            <li><a [routerLink]="['/about']" (click)="toggle()">about</a></li>
-            <li><a [routerLink]="['/education']" (click)="toggle()">education</a></li>
-            <li><a [routerLink]="['/portfolio']" (click)="toggle()">portfolio</a></li>
-            <li><a [routerLink]="['/contact']" (click)="toggle()">contact</a></li>
+            <li data-aos="flip-left"><a [routerLink]="['/home']" (click)="toggle()">home</a></li>
+            <li data-aos="fade-up-left"><a [routerLink]="['/about']" (click)="toggle()">about</a></li>
+            <li data-aos="flip-left"><a [routerLink]="['/education']" (click)="toggle()">education</a></li>
+            <li data-aos="fade-up-left"><a [routerLink]="['/portfolio']" (click)="toggle()">portfolio</a></li>
+            <li ><a [routerLink]="['/contact']" (click)="toggle()">contact</a></li>
         </ul>
     </div>
 </div>
