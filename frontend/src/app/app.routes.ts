@@ -13,5 +13,5 @@ export const routes: Routes = [
     {path:'portfolio',component:PortfolioComponent},
     {path:'education',component:EducationComponent},
     {path:'',redirectTo:'/home', pathMatch:'full'},
-    {path:'error',component:ErrorPageComponent}
+    {path:'**',component:ErrorPageComponent}
 ];

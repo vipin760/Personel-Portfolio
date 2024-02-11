@@ -1,3 +1,4 @@
+
 .home .row{
     display: flex;
     align-items: center;
@@ -12,6 +13,9 @@
 }
 .home .row .content{
     flex: 1 1 25rem;
+}
+.home .row .image img:hover{
+ padding-left: 2rem;
 }
 .home .row .content h3{
     font-size: 3.5rem;

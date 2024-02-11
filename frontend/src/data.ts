@@ -8,6 +8,13 @@ export interface Portfolio{
 }
 
 export const portfolioData:Portfolio[]=[
+   {
+      responsive:true,
+      image:"/assets/url-shortener.png",
+      label:'URL-Shortener',
+      text:'Deploying your project frontend and backend on Vercel marks a significant milestone. Leveraging Vercel seamless deployment process streamlines hosting, ensuring your project is readily accessible to users. Embrace this learning experience, mastering the intricacies of deployment while laying the foundation for future development endeavors. Congratulations on your successful deployment!',
+      link:"https://url-shortener-2-frontend.vercel.app/home"
+   },
  {
     responsive:true,
     image:"assets/hospital management.png",
